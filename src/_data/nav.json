@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Home",
+    "url": "/",
+    "section": "home"
+  },
+  {
+    "label": "Essays",
+    "url": "/essays/",
+    "section": "essays"
+  },
+  {
+    "label": "Yo-Yo",
+    "url": "/yoyo/",
+    "section": "yoyo"
+  },
+  {
+    "label": "Projects",
+    "url": "/projects/",
+    "section": "projects"
+  },
+  {
+    "label": "About",
+    "url": "/about/",
+    "section": "about"
+  }
+]

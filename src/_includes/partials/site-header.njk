@@ -1,0 +1,18 @@
+<header class="site-header">
+  <a class="brand" href="/" aria-label="{{ site.name }} home">
+    <span class="brand-mark" aria-hidden="true">
+      <img src="/assets/images/logo.png" alt="" width="44" height="44">
+    </span>
+    <span class="brand-text">
+      <span class="site-name">{{ site.name }}</span>
+      <span class="site-kicker">Workshop / Archive</span>
+    </span>
+  </a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      {% for item in nav %}
+        <li><a href="{{ item.url }}"{% if navSection == item.section %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

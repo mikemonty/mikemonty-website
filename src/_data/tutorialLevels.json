@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Basics",
+    "slug": "basics",
+    "description": "String, winding, binding, snap starts, and tension control.",
+    "cardDescription": "Start here for setup and maintenance fundamentals."
+  },
+  {
+    "title": "Beginner",
+    "slug": "beginner",
+    "description": "Foundational throws, mounts, and picture tricks.",
+    "cardDescription": "First throws, first mounts, and classic beginner tricks."
+  },
+  {
+    "title": "Intermediate",
+    "slug": "intermediate",
+    "description": "Mounts, regenerations, hops, whips, and frontstyle/sidestyle control.",
+    "cardDescription": "A stronger path into mounts, hops, whips, and regenerations."
+  },
+  {
+    "title": "Advanced",
+    "slug": "advanced",
+    "description": "Original and higher-difficulty tricks including Montgomery Twist, Scuzzlebutt, and Wrist Action.",
+    "cardDescription": "Harder tricks and original MikeMonty-style concepts."
+  }
+]

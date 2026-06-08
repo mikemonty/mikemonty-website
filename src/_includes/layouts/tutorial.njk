@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+---
+{% set levelTutorials = collections.tutorialsSorted | collectionForLevel(difficulty_slug) %}
+{% set previousTutorial = false %}
+{% set nextTutorial = false %}
+{% for item in levelTutorials %}
+  {% if item.data.order == order - 1 %}{% set previousTutorial = item %}{% endif %}
+  {% if item.data.order == order + 1 %}{% set nextTutorial = item %}{% endif %}
+{% endfor %}
+
+<article class="article article--tutorial">
+  <header class="article-header">
+    <p class="eyebrow">{{ difficulty }} Tutorial</p>
+    <h1>{{ title }}</h1>
+    <p class="intro">{{ intro or description }}</p>
+    <p class="article-meta"><time datetime="{{ date | dateIso }}">{{ date | dateDisplay }}</time> · {{ difficulty }} #{{ order }} · {{ duration_text }}</p>
+  </header>
+
+  {% set videoId = youtubeId %}
+  {% set videoTitle = title %}
+  {% include "partials/video-embed.njk" %}
+
+  <div class="article-body section">
+    {{ content | safe }}
+    <h2>Watch on YouTube</h2>
+    <p><a href="{{ youtubeUrl }}">Open this tutorial on YouTube</a>.</p>
+    <h2>Tutorial order</h2>
+    <p>This is {{ difficulty | lower }} tutorial #{{ order }} in the playlist sequence.</p>
+  </div>
+
+  <nav class="pagination-nav" aria-label="Tutorial navigation">
+    {% if previousTutorial %}
+      <a href="{{ previousTutorial.url }}"><span>Previous</span>{{ previousTutorial.data.title }}</a>
+    {% endif %}
+    <a href="/yoyo/tutorials/{{ difficulty_slug }}/"><span>Back to</span>{{ difficulty }} tutorials</a>
+    {% if nextTutorial %}
+      <a href="{{ nextTutorial.url }}"><span>Next</span>{{ nextTutorial.data.title }}</a>
+    {% endif %}
+  </nav>
+</article>

@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+---
+{% include "partials/page-hero.njk" %}
+
+<section class="section reading-width" aria-labelledby="videos-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">YouTube archive</p>
+      <h2 id="videos-heading">Videos</h2>
+    </div>
+    <span class="meta">{{ collections.videosSorted.length }} videos</span>
+  </div>
+  <div class="entry-list">
+    {% for video in collections.videosSorted %}
+      <article class="entry entry--media">
+        {% if video.data.thumbnail %}
+          <a class="entry-thumb" href="{{ video.url }}" aria-hidden="true">
+            <img src="{{ video.data.thumbnail }}" alt="" loading="lazy">
+          </a>
+        {% endif %}
+        <div class="entry-header">
+          <h3><a href="{{ video.url }}">{{ video.data.title }}</a></h3>
+          <span class="status"><time datetime="{{ video.data.date | dateIso }}">{{ video.data.date | dateDisplay }}</time></span>
+        </div>
+        <p>{{ video.data.section }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

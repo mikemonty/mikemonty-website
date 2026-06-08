@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+{% include "partials/page-hero.njk" %}
+
+{% if content | trim %}
+  <section class="section reading-width">
+    <div class="article-body">
+      {{ content | safe }}
+    </div>
+  </section>
+{% endif %}

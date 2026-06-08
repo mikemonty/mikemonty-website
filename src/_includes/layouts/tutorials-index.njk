@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+---
+{% include "partials/page-hero.njk" %}
+
+<section class="section" aria-labelledby="difficulty-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Learning path</p>
+      <h2 id="difficulty-heading">Difficulty levels</h2>
+    </div>
+    <span class="meta">{{ collections.tutorialsSorted.length }} tutorials</span>
+  </div>
+  <div class="card-grid card-grid--four">
+    {% for level in tutorialLevels %}
+      {% set levelTutorials = collections.tutorialsSorted | collectionForLevel(level.slug) %}
+      <a class="content-card content-card--link" href="/yoyo/tutorials/{{ level.slug }}/">
+        <p class="card-meta">{{ levelTutorials.length }} tutorials</p>
+        <h3>{{ level.title }}</h3>
+        <p>{{ level.cardDescription }}</p>
+      </a>
+    {% endfor %}
+  </div>
+</section>

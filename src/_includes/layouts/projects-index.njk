@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+---
+{% include "partials/page-hero.njk" %}
+
+<section class="section" aria-labelledby="project-list-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Bench notes</p>
+      <h2 id="project-list-heading">Project list</h2>
+    </div>
+    <span class="meta">Selected work</span>
+  </div>
+  <div class="card-grid card-grid--two">
+    {% for project in collections.projectsSorted %}
+      <article class="content-card project-card">
+        <p class="card-meta">{{ project.data.status }}</p>
+        <h3>{{ project.data.title }}</h3>
+        <p>{{ project.data.summary }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

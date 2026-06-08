@@ -1,0 +1,80 @@
+---
+layout: layouts/base.njk
+---
+{% include "partials/page-hero.njk" %}
+
+<section class="section section-band" aria-labelledby="explore-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Start here</p>
+      <h2 id="explore-heading">The main rooms</h2>
+    </div>
+  </div>
+  <div class="card-grid card-grid--four">
+    <a class="content-card content-card--link" href="/essays/">
+      <p class="card-meta">Essays & Notes</p>
+      <h3>Essays</h3>
+      <p>Longer thoughts, research notes, questions, and pieces worth keeping outside the feed.</p>
+    </a>
+    <a class="content-card content-card--link" href="/yoyo/">
+      <p class="card-meta">Yo-Yo</p>
+      <h3>Yo-yo work</h3>
+      <p>Tutorials, practice videos, history, trick work, and yo-yos made over the years.</p>
+    </a>
+    <a class="content-card content-card--link" href="/projects/">
+      <p class="card-meta">Projects & Tools</p>
+      <h3>Useful systems</h3>
+      <p>Software tools, experiments, reselling workflows, and practical projects in progress.</p>
+    </a>
+    <a class="content-card content-card--link" href="/about/">
+      <p class="card-meta">About / Now</p>
+      <h3>Michael Montgomery</h3>
+      <p>Background, recurring interests, current work, and the shape of this archive.</p>
+    </a>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="building-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Currently building</p>
+      <h2 id="building-heading">Work on the bench</h2>
+    </div>
+    <span class="meta">Selected projects</span>
+  </div>
+  <div class="card-grid card-grid--three">
+    {% for project in collections.projectsSorted | limit(2) %}
+      <article class="content-card">
+        <p class="card-meta">{{ project.data.status }}</p>
+        <h3>{{ project.data.title }}</h3>
+        <p>{{ project.data.summary }}</p>
+      </article>
+    {% endfor %}
+    <a class="content-card content-card--link" href="/yoyo/tutorials/">
+      <p class="card-meta">Yo-yo history/tutorials</p>
+      <h3>Tutorial path</h3>
+      <p>A structured route through {{ collections.tutorialsSorted.length }} yo-yo tutorials grouped by difficulty.</p>
+    </a>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="latest-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Recent writing</p>
+      <h2 id="latest-heading">Latest essays</h2>
+    </div>
+    <a class="section-link" href="/essays/">All essays</a>
+  </div>
+  <div class="entry-list">
+    {% for essay in collections.essaysSorted | limit(3) %}
+      <article class="entry">
+        <div class="entry-header">
+          <h3><a href="{{ essay.url }}">{{ essay.data.title }}</a></h3>
+          <span class="status"><time datetime="{{ essay.data.date | dateIso }}">{{ essay.data.date | dateDisplay }}</time></span>
+        </div>
+        <p>{{ essay.data.intro or essay.data.description }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

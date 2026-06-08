@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description or site.description }}">
+    {% set documentTitle = pageTitle or title %}
+    <title>{% if documentTitle and documentTitle != site.name %}{{ documentTitle }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body class="site-shell">
+    {% include "partials/site-header.njk" %}
+
+    <main class="site-main">
+      {{ content | safe }}
+    </main>
+
+    {% include "partials/site-footer.njk" %}
+  </body>
+</html>

@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+---
+{% set previousEssay = collections.essaysSorted | previousInCollection(page.url) %}
+{% set nextEssay = collections.essaysSorted | nextInCollection(page.url) %}
+
+<article class="article article--essay">
+  <header class="article-header">
+    <p class="eyebrow">{{ eyebrow or "Essay" }}</p>
+    <h1>{{ title }}</h1>
+    <p class="intro">{{ intro or description }}</p>
+    <p class="article-meta"><time datetime="{{ date | dateIso }}">{{ date | dateDisplay }}</time>{% if readingTime %} · About {{ readingTime }}{% endif %}</p>
+  </header>
+
+  <div class="article-body">
+    {{ content | safe }}
+  </div>
+
+  {% if previousEssay or nextEssay %}
+    <nav class="pagination-nav" aria-label="Essay navigation">
+      {% if previousEssay %}
+        <a href="{{ previousEssay.url }}">
+          <span>Previous</span>
+          {{ previousEssay.data.title }}
+        </a>
+      {% endif %}
+      {% if nextEssay %}
+        <a href="{{ nextEssay.url }}">
+          <span>Next</span>
+          {{ nextEssay.data.title }}
+        </a>
+      {% endif %}
+    </nav>
+  {% endif %}
+</article>

@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+---
+{% include "partials/page-hero.njk" %}
+
+<section class="section" aria-labelledby="yoyo-sections-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Yo-yo archive</p>
+      <h2 id="yoyo-sections-heading">Yo-yo sections</h2>
+    </div>
+  </div>
+  <div class="card-grid card-grid--three">
+    <a class="content-card content-card--link" href="/yoyo/tutorials/">
+      <p class="card-meta">{{ collections.tutorialsSorted.length }} tutorials</p>
+      <h3>Tutorials</h3>
+      <p>Step-by-step yo-yo tutorials grouped by difficulty and kept in playlist order.</p>
+    </a>
+    <a class="content-card content-card--link" href="/yoyo/videos/">
+      <p class="card-meta">{{ collections.videosSorted.length }} videos</p>
+      <h3>Videos</h3>
+      <p>Yo-yo practice sessions, trick chats, vlogs, and embedded YouTube videos organized by date.</p>
+    </a>
+    <a class="content-card content-card--link" href="/yoyo/yo-yos-made/">
+      <p class="card-meta">Design archive</p>
+      <h3>Yo-yos I’ve made</h3>
+      <p>Designs, photos, specs, stories, and production notes for yo-yos Mike has made.</p>
+    </a>
+  </div>
+</section>
+
+<section class="section reading-width" aria-labelledby="tutorial-path-heading">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Learn in order</p>
+      <h2 id="tutorial-path-heading">Tutorial path</h2>
+    </div>
+    <span class="meta">{{ collections.tutorialsSorted.length }} tutorials</span>
+  </div>
+  <div class="entry-list">
+    {% for level in tutorialLevels %}
+      {% set levelTutorials = collections.tutorialsSorted | collectionForLevel(level.slug) %}
+      <article class="entry">
+        <div class="entry-header">
+          <h3><a href="/yoyo/tutorials/{{ level.slug }}/">{{ level.title }}</a></h3>
+          <span class="status">{{ levelTutorials.length }} videos</span>
+        </div>
+        <p>{{ level.description }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

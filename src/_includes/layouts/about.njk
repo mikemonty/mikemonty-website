@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+---
+<section class="about-hero">
+  <div>
+    {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+    <h1>{{ title }}</h1>
+    <p class="intro">{{ intro or description }}</p>
+  </div>
+  {% if portraitImage %}
+    <figure class="portrait-frame">
+      <img src="{{ portraitImage }}" alt="{{ portraitAlt or 'Michael Montgomery' }}" loading="lazy">
+    </figure>
+  {% endif %}
+</section>
+
+<div class="split-panel about-layout">
+  <article class="article-body">
+    <h2>Short bio</h2>
+    {{ content | safe }}
+  </article>
+
+  <aside class="detail-panel">
+    <h2>Current work</h2>
+    <ul>
+      <li>Writing essays and notes for a durable personal archive.</li>
+      <li>Building practical workflows for reselling, inventory, and Pokémon cards.</li>
+      <li>Organizing yo-yo tutorials, history, practice videos, and design notes.</li>
+    </ul>
+
+    <h2>Recurring interests</h2>
+    <ul>
+      <li>Yo-yos, skill learning, and teaching.</li>
+      <li>Evidence, uncertainty, memory, and personal archives.</li>
+      <li>Small software tools that help real work get finished.</li>
+    </ul>
+
+    <h2>Important areas</h2>
+    <ul class="link-list">
+      <li><a href="/essays/">Essays & notes</a></li>
+      <li><a href="/yoyo/">Yo-yo work</a></li>
+      <li><a href="/projects/">Projects & tools</a></li>
+      <li><a href="/">Home base</a></li>
+    </ul>
+  </aside>
+</div>
