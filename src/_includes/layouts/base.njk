@@ -16,5 +16,36 @@
     </main>
 
     {% include "partials/site-footer.njk" %}
+    <script>
+      (() => {
+        const shell = document.querySelector(".site-shell");
+        const header = document.querySelector(".site-header");
+        const toggle = document.querySelector(".nav-toggle");
+        const nav = document.querySelector("#site-nav");
+
+        if (!shell || !header || !toggle || !nav) {
+          return;
+        }
+
+        shell.classList.add("has-menu-toggle");
+
+        const setOpen = (isOpen) => {
+          header.dataset.navOpen = String(isOpen);
+          toggle.setAttribute("aria-expanded", String(isOpen));
+        };
+
+        setOpen(false);
+
+        toggle.addEventListener("click", () => {
+          setOpen(header.dataset.navOpen !== "true");
+        });
+
+        nav.addEventListener("click", (event) => {
+          if (event.target.closest("a")) {
+            setOpen(false);
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
