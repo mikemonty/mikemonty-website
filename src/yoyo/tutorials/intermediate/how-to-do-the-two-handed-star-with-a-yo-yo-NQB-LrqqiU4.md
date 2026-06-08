@@ -1,8 +1,8 @@
 ---
 layout: "layouts/tutorial.njk"
 title: "How to do the Two-Handed Star with a Yo-Yo"
-description: "In this video tutorial, Mike teaches a yo-yo picture trick called the two-handed star.￼"
-intro: "In this video tutorial, Mike teaches a yo-yo picture trick called the two-handed star.￼"
+description: "In this video tutorial, Mike teaches a yo-yo picture trick called the two-handed star."
+intro: "In this video tutorial, Mike teaches a yo-yo picture trick called the two-handed star."
 date: "2025-01-13"
 difficulty: "Intermediate"
 difficulty_slug: "intermediate"
@@ -21,4 +21,4 @@ tags:
   - "tutorials"
 navSection: "yoyo"
 ---
-In this video tutorial, Mike teaches a yo-yo picture trick called the two-handed star.￼
+In this video tutorial, Mike teaches a yo-yo picture trick called the two-handed star.

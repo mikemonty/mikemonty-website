@@ -1,8 +1,8 @@
 ---
 layout: "layouts/tutorial.njk"
 title: "How to do Black Hops with a Yo-Yo"
-description: "In this video tutorial, Mike teaches a classic yo-yo trick called Black Hops, which hops from a triple or nothing down to a trapeze and then back up again.￼"
-intro: "In this video tutorial, Mike teaches a classic yo-yo trick called Black Hops, which hops from a triple or nothing down to a trapeze and then back up again.￼"
+description: "In this video tutorial, Mike teaches a classic yo-yo trick called Black Hops, which hops from a triple or nothing down to a trapeze and then back up again."
+intro: "In this video tutorial, Mike teaches a classic yo-yo trick called Black Hops, which hops from a triple or nothing down to a trapeze and then back up again."
 date: "2025-01-09"
 difficulty: "Intermediate"
 difficulty_slug: "intermediate"
@@ -21,4 +21,4 @@ tags:
   - "tutorials"
 navSection: "yoyo"
 ---
-In this video tutorial, Mike teaches a classic yo-yo trick called Black Hops, which hops from a triple or nothing down to a trapeze and then back up again.￼
+In this video tutorial, Mike teaches a classic yo-yo trick called Black Hops, which hops from a triple or nothing down to a trapeze and then back up again.

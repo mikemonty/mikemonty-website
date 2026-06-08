@@ -1,8 +1,8 @@
 ---
 layout: "layouts/tutorial.njk"
 title: "How to do a whip into wrist mount with a yo-yo"
-description: "In this video tutorial Mike teaches how to do the whip into wrist mount technique.￼￼"
-intro: "In this video tutorial Mike teaches how to do the whip into wrist mount technique.￼￼"
+description: "In this video tutorial Mike teaches how to do the whip into wrist mount technique."
+intro: "In this video tutorial Mike teaches how to do the whip into wrist mount technique."
 date: "2025-01-07"
 difficulty: "Intermediate"
 difficulty_slug: "intermediate"
@@ -21,4 +21,4 @@ tags:
   - "tutorials"
 navSection: "yoyo"
 ---
-In this video tutorial Mike teaches how to do the whip into wrist mount technique.￼￼
+In this video tutorial Mike teaches how to do the whip into wrist mount technique.

@@ -1,8 +1,8 @@
 ---
 layout: "layouts/tutorial.njk"
 title: "How to do the Two-Ja-Vu Yo-Yo Trick"
-description: "In this video tutorial, Mike teaches a repeating yo-yo trick called ￼Two-Ja-Vu, because it’s based on the double or nothing and it repeats."
-intro: "In this video tutorial, Mike teaches a repeating yo-yo trick called ￼Two-Ja-Vu, because it’s based on the double or nothing and it repeats."
+description: "In this video tutorial, Mike teaches a repeating yo-yo trick called Two-Ja-Vu, because it’s based on the double or nothing and it repeats."
+intro: "In this video tutorial, Mike teaches a repeating yo-yo trick called Two-Ja-Vu, because it’s based on the double or nothing and it repeats."
 date: "2025-01-15"
 difficulty: "Advanced"
 difficulty_slug: "advanced"
@@ -21,4 +21,4 @@ tags:
   - "tutorials"
 navSection: "yoyo"
 ---
-In this video tutorial, Mike teaches a repeating yo-yo trick called ￼Two-Ja-Vu, because it’s based on the double or nothing and it repeats.
+In this video tutorial, Mike teaches a repeating yo-yo trick called Two-Ja-Vu, because it’s based on the double or nothing and it repeats.

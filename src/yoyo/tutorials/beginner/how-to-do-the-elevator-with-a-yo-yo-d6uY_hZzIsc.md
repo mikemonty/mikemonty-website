@@ -1,8 +1,8 @@
 ---
 layout: "layouts/tutorial.njk"
 title: "How to do The Elevator with a Yo-Yo"
-description: "In this video tutorial, Mike teaches how to do the yo-yo trick called the elevator a good beginner trick that teaches you to keep your hands, parallel, and how to throw and use a long sleeper.￼"
-intro: "In this video tutorial, Mike teaches how to do the yo-yo trick called the elevator a good beginner trick that teaches you to keep your hands, parallel, and how to throw and use a long sleeper.￼"
+description: "In this video tutorial, Mike teaches how to do the yo-yo trick called the elevator a good beginner trick that teaches you to keep your hands, parallel, and how to throw and use a long sleeper."
+intro: "In this video tutorial, Mike teaches how to do the yo-yo trick called the elevator a good beginner trick that teaches you to keep your hands, parallel, and how to throw and use a long sleeper."
 date: "2025-01-12"
 difficulty: "Beginner"
 difficulty_slug: "beginner"
@@ -21,4 +21,4 @@ tags:
   - "tutorials"
 navSection: "yoyo"
 ---
-In this video tutorial, Mike teaches how to do the yo-yo trick called the elevator a good beginner trick that teaches you to keep your hands, parallel, and how to throw and use a long sleeper.￼
+In this video tutorial, Mike teaches how to do the yo-yo trick called the elevator a good beginner trick that teaches you to keep your hands, parallel, and how to throw and use a long sleeper.

@@ -1,8 +1,8 @@
 ---
 layout: "layouts/tutorial.njk"
 title: "How to wind up and bind an unresponsive yo-yo"
-description: "This video will teach you how to wind up and how to bind an unresponsive ￼yo-yo."
-intro: "This video will teach you how to wind up and how to bind an unresponsive ￼yo-yo."
+description: "This video will teach you how to wind up and how to bind an unresponsive yo-yo."
+intro: "This video will teach you how to wind up and how to bind an unresponsive yo-yo."
 date: "2024-11-13"
 difficulty: "Basics"
 difficulty_slug: "basics"
@@ -21,4 +21,4 @@ tags:
   - "tutorials"
 navSection: "yoyo"
 ---
-This video will teach you how to wind up and how to bind an unresponsive ￼yo-yo.
+This video will teach you how to wind up and how to bind an unresponsive yo-yo.

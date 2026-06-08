@@ -1,8 +1,8 @@
 ---
 layout: "layouts/tutorial.njk"
 title: "How to do the One-Handed Star Yo-Yo Trick"
-description: "In this tutorial, Mike teaches the one handed star yo-yo picture trick. ￼"
-intro: "In this tutorial, Mike teaches the one handed star yo-yo picture trick. ￼"
+description: "In this tutorial, Mike teaches the one handed star yo-yo picture trick. "
+intro: "In this tutorial, Mike teaches the one handed star yo-yo picture trick. "
 date: "2025-02-04"
 difficulty: "Beginner"
 difficulty_slug: "beginner"
@@ -21,4 +21,4 @@ tags:
   - "tutorials"
 navSection: "yoyo"
 ---
-In this tutorial, Mike teaches the one handed star yo-yo picture trick. ￼
+In this tutorial, Mike teaches the one handed star yo-yo picture trick.

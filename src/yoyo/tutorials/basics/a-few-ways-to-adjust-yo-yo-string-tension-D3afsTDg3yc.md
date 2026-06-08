@@ -1,8 +1,8 @@
 ---
 layout: "layouts/tutorial.njk"
 title: "A few ways to adjust yo-yo string tension"
-description: "This tutorial discusses what string tension is in the context of yo-yoing, and then gives a few methods for adjusting it from beginner to advanced. ￼"
-intro: "This tutorial discusses what string tension is in the context of yo-yoing, and then gives a few methods for adjusting it from beginner to advanced. ￼"
+description: "This tutorial discusses what string tension is in the context of yo-yoing, and then gives a few methods for adjusting it from beginner to advanced. "
+intro: "This tutorial discusses what string tension is in the context of yo-yoing, and then gives a few methods for adjusting it from beginner to advanced. "
 date: "2025-01-04"
 difficulty: "Basics"
 difficulty_slug: "basics"
@@ -21,4 +21,4 @@ tags:
   - "tutorials"
 navSection: "yoyo"
 ---
-This tutorial discusses what string tension is in the context of yo-yoing, and then gives a few methods for adjusting it from beginner to advanced. ￼
+This tutorial discusses what string tension is in the context of yo-yoing, and then gives a few methods for adjusting it from beginner to advanced.
