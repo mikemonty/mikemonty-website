@@ -765,7 +765,7 @@ pre {
     width: 100%;
   }
 
-  .site-shell.has-menu-toggle .site-nav {
+  .site-nav {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -775,7 +775,7 @@ pre {
       opacity 140ms ease;
   }
 
-  .site-shell.has-menu-toggle .site-header[data-nav-open="true"] .site-nav {
+  .site-header[data-nav-open="true"] .site-nav {
     max-height: 20rem;
     opacity: 1;
     pointer-events: auto;

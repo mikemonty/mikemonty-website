@@ -6,7 +6,7 @@
     <meta name="description" content="{{ description or site.description }}">
     {% set documentTitle = pageTitle or title %}
     <title>{% if documentTitle and documentTitle != site.name %}{{ documentTitle }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20260608-menu">
   </head>
   <body class="site-shell">
     {% include "partials/site-header.njk" %}
