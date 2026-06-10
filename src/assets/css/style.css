@@ -319,6 +319,10 @@ pre {
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+  align-items: center;
   margin-bottom: var(--space-3);
   color: var(--color-muted);
   font-family: var(--font-sans);
@@ -326,25 +330,7 @@ pre {
   font-weight: 800;
 }
 
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem 0.55rem;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.breadcrumbs li {
-  display: inline-flex;
-  align-items: center;
-  min-width: 0;
-}
-
-.breadcrumbs li + li::before {
-  content: "/";
-  margin-right: 0.55rem;
+.breadcrumbs__separator {
   color: var(--color-border-strong);
   font-weight: 700;
 }

@@ -3,11 +3,10 @@
 
 {% if breadcrumbItems and currentLabel %}
   <nav class="breadcrumbs" aria-label="Breadcrumb">
-    <ol>
-      {% for crumb in breadcrumbItems %}
-        <li><a href="{{ crumb.url }}">{{ crumb.label }}</a></li>
-      {% endfor %}
-      <li aria-current="page">{{ currentLabel }}</li>
-    </ol>
+    {% for crumb in breadcrumbItems %}
+      <a href="{{ crumb.url }}">{{ crumb.label }}</a>
+      <span class="breadcrumbs__separator" aria-hidden="true">&gt;</span>
+    {% endfor %}
+    <span aria-current="page">{{ currentLabel }}</span>
   </nav>
 {% endif %}
