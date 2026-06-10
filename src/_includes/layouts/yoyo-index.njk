@@ -28,25 +28,3 @@ layout: layouts/base.njk
     </a>
   </div>
 </section>
-
-<section class="section reading-width" aria-labelledby="tutorial-path-heading">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Learn in order</p>
-      <h2 id="tutorial-path-heading">Tutorial path</h2>
-    </div>
-    <span class="meta">{{ collections.tutorialsSorted.length }} tutorials</span>
-  </div>
-  <div class="entry-list">
-    {% for level in tutorialLevels %}
-      {% set levelTutorials = collections.tutorialsSorted | collectionForLevel(level.slug) %}
-      <article class="entry">
-        <div class="entry-header">
-          <h3><a href="/yoyo/tutorials/{{ level.slug }}/">{{ level.title }}</a></h3>
-          <span class="status">{{ levelTutorials.length }} videos</span>
-        </div>
-        <p>{{ level.description }}</p>
-      </article>
-    {% endfor %}
-  </div>
-</section>
