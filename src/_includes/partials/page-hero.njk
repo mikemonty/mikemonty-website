@@ -1,6 +1,7 @@
 <section class="page-hero">
   {% include "partials/breadcrumbs.njk" %}
-  {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+  {% set currentLabel = pageTitle or heading or title %}
+  {% if eyebrow and (eyebrow | trim) != (currentLabel | trim) %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
   <h1>{{ heading or title }}</h1>
   <p class="intro">{{ intro or description }}</p>
 </section>

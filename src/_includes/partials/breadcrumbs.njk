@@ -1,12 +1,12 @@
 {% set breadcrumbItems = breadcrumbItems or breadcrumbs %}
-{% set currentLabel = breadcrumbCurrent or pageTitle or heading or title %}
 
-{% if breadcrumbItems and currentLabel %}
+{% if breadcrumbItems and breadcrumbItems.length %}
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     {% for crumb in breadcrumbItems %}
       <a href="{{ crumb.url }}">{{ crumb.label }}</a>
-      <span class="breadcrumbs__separator" aria-hidden="true">&gt;</span>
+      {% if not loop.last %}
+        <span class="breadcrumbs__separator" aria-hidden="true">&gt;</span>
+      {% endif %}
     {% endfor %}
-    <span aria-current="page">{{ currentLabel }}</span>
   </nav>
 {% endif %}

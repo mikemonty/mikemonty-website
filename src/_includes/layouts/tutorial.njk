@@ -19,7 +19,9 @@ layout: layouts/base.njk
       ] %}
     {% endif %}
     {% include "partials/breadcrumbs.njk" %}
-    <p class="eyebrow">{{ difficulty }} Tutorial</p>
+    {% set currentLabel = pageTitle or heading or title %}
+    {% set eyebrowLabel = difficulty + " Tutorial" %}
+    {% if (eyebrowLabel | trim) != (currentLabel | trim) %}<p class="eyebrow">{{ eyebrowLabel }}</p>{% endif %}
     <h1>{{ title }}</h1>
     <p class="intro">{{ intro or description }}</p>
     <p class="article-meta"><time datetime="{{ date | dateIso }}">{{ date | dateDisplay }}</time> · {{ difficulty }} #{{ order }} · {{ duration_text }}</p>
