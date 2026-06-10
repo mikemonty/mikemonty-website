@@ -11,11 +11,21 @@ layout: layouts/base.njk
 
 <article class="article article--tutorial">
   <header class="article-header">
+    {% if not breadcrumbs %}
+      {% set breadcrumbItems = [
+        { label: "Yo-Yo", url: "/yoyo/" },
+        { label: "Tutorials", url: "/yoyo/tutorials/" },
+        { label: difficulty, url: "/yoyo/tutorials/" + difficulty_slug + "/" }
+      ] %}
+    {% endif %}
+    {% include "partials/breadcrumbs.njk" %}
     <p class="eyebrow">{{ difficulty }} Tutorial</p>
     <h1>{{ title }}</h1>
     <p class="intro">{{ intro or description }}</p>
     <p class="article-meta"><time datetime="{{ date | dateIso }}">{{ date | dateDisplay }}</time> · {{ difficulty }} #{{ order }} · {{ duration_text }}</p>
   </header>
+
+  {% include "partials/image-gallery.njk" %}
 
   {% set videoId = youtubeId %}
   {% set videoTitle = title %}

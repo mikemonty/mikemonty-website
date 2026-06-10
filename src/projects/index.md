@@ -7,4 +7,5 @@ eyebrow: "Projects"
 intro: "Active tools, research threads, and experiments worth keeping in view."
 navSection: "projects"
 permalink: "/projects/"
+breadcrumbs: []
 ---

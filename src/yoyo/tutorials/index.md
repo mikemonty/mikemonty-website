@@ -7,4 +7,7 @@ eyebrow: "Yo-Yo Tutorials"
 intro: "Tutorials are grouped by difficulty and kept in playlist order so each trick can lead naturally into the next."
 navSection: "yoyo"
 permalink: "/yoyo/tutorials/"
+breadcrumbs:
+  - label: "Yo-Yo"
+    url: "/yoyo/"
 ---

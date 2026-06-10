@@ -3,11 +3,20 @@ layout: layouts/base.njk
 ---
 <article class="article article--video">
   <header class="article-header">
+    {% if not breadcrumbs %}
+      {% set breadcrumbItems = [
+        { label: "Yo-Yo", url: "/yoyo/" },
+        { label: "Videos", url: "/yoyo/videos/" }
+      ] %}
+    {% endif %}
+    {% include "partials/breadcrumbs.njk" %}
     <p class="eyebrow">Yo-Yo Video</p>
     <h1>{{ title }}</h1>
     <p class="intro">{{ section or intro }}</p>
     <p class="article-meta"><time datetime="{{ date | dateIso }}">{{ date | dateDisplay }}</time> · {{ section }} · {{ duration_text }}</p>
   </header>
+
+  {% include "partials/image-gallery.njk" %}
 
   {% set videoId = youtubeId %}
   {% set videoTitle = title %}

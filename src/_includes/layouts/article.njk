@@ -6,11 +6,17 @@ layout: layouts/base.njk
 
 <article class="article article--essay">
   <header class="article-header">
+    {% if not breadcrumbs %}
+      {% set breadcrumbItems = [{ label: "Essays", url: "/essays/" }] %}
+    {% endif %}
+    {% include "partials/breadcrumbs.njk" %}
     <p class="eyebrow">{{ eyebrow or "Essay" }}</p>
     <h1>{{ title }}</h1>
     <p class="intro">{{ intro or description }}</p>
     <p class="article-meta"><time datetime="{{ date | dateIso }}">{{ date | dateDisplay }}</time>{% if readingTime %} · About {{ readingTime }}{% endif %}</p>
   </header>
+
+  {% include "partials/image-gallery.njk" %}
 
   <div class="article-body">
     {{ content | safe }}

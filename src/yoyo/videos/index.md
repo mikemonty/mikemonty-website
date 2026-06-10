@@ -7,4 +7,7 @@ eyebrow: "Yo-Yo Videos"
 intro: "Yo-yo related videos organized by upload date, newest first."
 navSection: "yoyo"
 permalink: "/yoyo/videos/"
+breadcrumbs:
+  - label: "Yo-Yo"
+    url: "/yoyo/"
 ---

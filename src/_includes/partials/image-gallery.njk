@@ -1,0 +1,9 @@
+{% if imageGallery and imageGallery.length %}
+  <div class="image-gallery" data-lightbox-gallery aria-label="Image gallery">
+    {% for image in imageGallery %}
+      <a class="image-gallery__item" href="{{ image.src }}" data-lightbox-item>
+        <img src="{{ image.src }}" alt="{{ image.alt or '' }}" loading="lazy">
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

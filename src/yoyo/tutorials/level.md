@@ -12,4 +12,9 @@ eleventyComputed:
   description: "{{ level.title }} yo-yo tutorials from Mike Montgomery."
   eyebrow: "{{ level.title }} Yo-Yo Tutorials"
   intro: "These tutorials are shown in playlist order."
+  breadcrumbs:
+    - label: "Yo-Yo"
+      url: "/yoyo/"
+    - label: "Tutorials"
+      url: "/yoyo/tutorials/"
 ---

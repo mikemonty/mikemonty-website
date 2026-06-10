@@ -1,0 +1,13 @@
+{% set breadcrumbItems = breadcrumbItems or breadcrumbs %}
+{% set currentLabel = breadcrumbCurrent or pageTitle or heading or title %}
+
+{% if breadcrumbItems and currentLabel %}
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      {% for crumb in breadcrumbItems %}
+        <li><a href="{{ crumb.url }}">{{ crumb.label }}</a></li>
+      {% endfor %}
+      <li aria-current="page">{{ currentLabel }}</li>
+    </ol>
+  </nav>
+{% endif %}

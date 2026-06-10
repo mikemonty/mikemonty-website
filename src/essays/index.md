@@ -7,4 +7,5 @@ eyebrow: "Essays"
 intro: "Essays, transcripts, and research notes."
 navSection: "essays"
 permalink: "/essays/"
+breadcrumbs: []
 ---
