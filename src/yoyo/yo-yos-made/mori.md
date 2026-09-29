@@ -19,6 +19,8 @@ imageGallery:
     alt: "Face-on view of the Burgundy Mori yo-yo showing the engraved crown logo."
   - src: "/assets/images/yoyo/mori/mori-burgundy-profile.jpg"
     alt: "Side profile of the Burgundy Mori yo-yo showing the gap and bearing."
+  - src: "/assets/images/yoyo/mori/mori-blackberry-angle.jpg"
+    alt: "Dark purple Blackberry Mori yo-yo at a three-quarter angle, engraved crown logo visible on the face."
   - src: "/assets/images/yoyo/mori/mori-green-angle.jpg"
     alt: "Green Mori yo-yo at a three-quarter angle, engraved crown logo visible on the face."
   - src: "/assets/images/yoyo/mori/mori-green-face.jpg"
