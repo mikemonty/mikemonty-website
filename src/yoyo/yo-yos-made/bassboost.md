@@ -6,11 +6,10 @@ intro: "An early Double-Take Industries yo-yo from Mike’s pre-MikeMonty-brand 
 eyebrow: "Yo-yos I’ve made"
 navSection: yoyo
 permalink: /yoyo/yo-yos-made/bassboost/
+imageGallery:
+  - src: "/assets/images/yoyo/bassboost/bassboost-prototype.jpg"
+    alt: "Raw machined BassBoost prototype halves in a parts tray, some fitted with black o-rings."
 ---
-
-<figure class="content-card">
-  <strong>Image placeholder:</strong> BassBoost product photo, video still, or Double-Take Industries-era image.
-</figure>
 
 ## Overview
 
