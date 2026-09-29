@@ -70,6 +70,10 @@ a:focus-visible {
   outline-offset: 4px;
 }
 
+code {
+  overflow-wrap: anywhere;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -678,6 +682,7 @@ pre {
   border: 0;
   background: transparent;
   color: inherit;
+  overflow-wrap: normal;
 }
 
 .note,
