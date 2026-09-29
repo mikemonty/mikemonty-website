@@ -6,11 +6,38 @@ intro: "A MikeMonty aluminum yo-yo whose production run arrived in April 2021."
 eyebrow: "Yo-yos I’ve made"
 navSection: yoyo
 permalink: /yoyo/yo-yos-made/mori/
+imageGallery:
+  - src: "/assets/images/yoyo/mori/mori-sienna-angle.jpg"
+    alt: "Bronze Sienna Mori yo-yo at a three-quarter angle, engraved crown logo visible on the face."
+  - src: "/assets/images/yoyo/mori/mori-sienna-face.jpg"
+    alt: "Face-on view of the bronze Sienna Mori yo-yo showing the engraved crown logo."
+  - src: "/assets/images/yoyo/mori/mori-sienna-profile.jpg"
+    alt: "Side profile of the bronze Sienna Mori yo-yo showing the gap and bearing."
+  - src: "/assets/images/yoyo/mori/mori-blackberry-angle.jpg"
+    alt: "Dark red Blackberry Mori yo-yo at a three-quarter angle, engraved crown logo visible on the face."
+  - src: "/assets/images/yoyo/mori/mori-blackberry-face.jpg"
+    alt: "Face-on view of the dark red Blackberry Mori yo-yo showing the engraved crown logo."
+  - src: "/assets/images/yoyo/mori/mori-blackberry-profile.jpg"
+    alt: "Side profile of the dark red Blackberry Mori yo-yo showing the gap and bearing."
+  - src: "/assets/images/yoyo/mori/mori-green-angle.jpg"
+    alt: "Green Mori yo-yo at a three-quarter angle, engraved crown logo visible on the face."
+  - src: "/assets/images/yoyo/mori/mori-green-face.jpg"
+    alt: "Face-on view of the green Mori yo-yo showing the engraved crown logo."
+  - src: "/assets/images/yoyo/mori/mori-green-profile.jpg"
+    alt: "Side profile of the green Mori yo-yo showing the gap and bearing."
+  - src: "/assets/images/yoyo/mori/mori-blue-angle.jpg"
+    alt: "Blue Mori yo-yo at a three-quarter angle, engraved crown logo visible on the face."
+  - src: "/assets/images/yoyo/mori/mori-blue-face.jpg"
+    alt: "Face-on view of the blue Mori yo-yo showing the engraved crown logo."
+  - src: "/assets/images/yoyo/mori/mori-blue-profile.jpg"
+    alt: "Side profile of the blue Mori yo-yo showing the gap and bearing."
+  - src: "/assets/images/yoyo/mori/mori-gold-angle.jpg"
+    alt: "Gold Mori yo-yo at a three-quarter angle, engraved crown logo visible on the face."
+  - src: "/assets/images/yoyo/mori/mori-gold-face.jpg"
+    alt: "Face-on view of the gold Mori yo-yo showing the engraved crown logo."
+  - src: "/assets/images/yoyo/mori/mori-gold-profile.jpg"
+    alt: "Side profile of the gold Mori yo-yo showing the gap and bearing."
 ---
-
-<figure class="content-card">
-  <strong>Image placeholder:</strong> Mori product photo, Blackberry Mori, Sienna Mori, purple Mori, engraving, or box art image.
-</figure>
 
 ## Overview
 
