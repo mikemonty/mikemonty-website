@@ -9,6 +9,12 @@ permalink: /yoyo/yo-yos-made/bassboost/
 imageGallery:
   - src: "/assets/images/yoyo/bassboost/bassboost-prototype.jpg"
     alt: "Raw machined BassBoost prototype halves in a parts tray, some fitted with black o-rings."
+  - src: "/assets/images/yoyo/bassboost/bassboost-original-profile.jpg"
+    alt: "Assembled BassBoost with a polished aluminum half and a black delrin 3yo3 prototype half by Landon Balk."
+  - src: "/assets/images/yoyo/bassboost/bassboost-original-halves.jpg"
+    alt: "Raw aluminum BassBoost half beside a black delrin 3yo3 prototype half by Landon Balk."
+  - src: "/assets/images/yoyo/bassboost/bassboost-original-bearing.jpg"
+    alt: "Close-up of a BassBoost half's bearing seat and a raw aluminum cup, with a black 3yo3 delrin prototype behind."
 ---
 
 ## Overview
