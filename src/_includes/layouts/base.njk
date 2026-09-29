@@ -6,7 +6,7 @@
     <meta name="description" content="{{ description or site.description }}">
     {% set documentTitle = pageTitle or title %}
     <title>{% if documentTitle and documentTitle != site.name %}{{ documentTitle }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
-    <link rel="stylesheet" href="/assets/css/style.css?v=20260610-breadcrumbs">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20260929-carousel">
   </head>
   <body class="site-shell">
     {% include "partials/site-header.njk" %}
@@ -17,6 +17,7 @@
 
     {% include "partials/site-footer.njk" %}
     <script src="/assets/js/lightbox.js?v=20260610-gallery" defer></script>
+    <script src="/assets/js/carousel.js?v=20260929-carousel" defer></script>
     <script>
       (() => {
         const shell = document.querySelector(".site-shell");

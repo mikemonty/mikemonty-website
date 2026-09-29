@@ -58,6 +58,7 @@ a {
   color: var(--color-accent-dark);
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
+  overflow-wrap: anywhere;
 }
 
 a:hover {
@@ -454,21 +455,82 @@ pre {
 }
 
 .image-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-3);
+  position: relative;
   max-width: var(--wide-reading-width);
   margin-block: 0 var(--space-5);
 }
 
+.image-gallery__track {
+  position: relative;
+  display: flex;
+  gap: var(--space-3);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  border-radius: var(--radius);
+  scrollbar-width: none;
+}
+
+.image-gallery__track::-webkit-scrollbar {
+  display: none;
+}
+
 .image-gallery__item {
   display: block;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
   aspect-ratio: 1;
   overflow: hidden;
   border: var(--border);
   border-radius: var(--radius);
   background: var(--color-surface);
   box-shadow: var(--shadow);
+}
+
+.image-gallery__nav {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: var(--border);
+  border-radius: 50%;
+  background: rgb(255 250 241 / 0.92);
+  color: var(--color-text);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transform: translateY(-50%);
+}
+
+.image-gallery__nav:hover {
+  border-color: var(--color-accent);
+}
+
+.image-gallery__nav--prev {
+  left: var(--space-3);
+}
+
+.image-gallery__nav--next {
+  right: var(--space-3);
+}
+
+.image-gallery__counter {
+  position: absolute;
+  right: var(--space-3);
+  bottom: var(--space-3);
+  z-index: 2;
+  margin: 0;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  background: rgb(37 32 25 / 0.72);
+  color: rgb(255 250 241);
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .image-gallery__item:hover {
@@ -879,9 +941,6 @@ pre {
     grid-template-columns: 1fr;
   }
 
-  .image-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 44rem) {
@@ -948,10 +1007,6 @@ pre {
   .brand-mark img {
     width: 1.9rem;
     height: 1.9rem;
-  }
-
-  .image-gallery {
-    grid-template-columns: 1fr;
   }
 
   .lightbox {
